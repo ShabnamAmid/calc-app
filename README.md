@@ -5,6 +5,7 @@
 - جمع: `add(a, b)`
 - تفریق: `subtract(a, b)`
 - ضرب: `multiply(a, b)`
+- درصد: `percent(number)`
 - تقسیم: `divide(a, b)`
 - جذر: `sqrt(number)`
 
@@ -13,11 +14,12 @@
 ## نمونه استفاده
 
 ```python
-from calculator import add, subtract, multiply, divide, sqrt
+from calculator import add, subtract, multiply, percent, divide, sqrt
 
 print(add(2, 3))        # 5
 print(subtract(7, 4))   # 3
 print(multiply(6, 5))   # 30
+print(percent(25))      # 0.25
 print(divide(8, 2))     # 4.0
 print(sqrt(25))         # 5.0
 ```

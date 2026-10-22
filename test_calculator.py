@@ -1,6 +1,6 @@
 import unittest
 
-from calculator import add, divide, multiply, sqrt, subtract
+from calculator import add, divide, multiply, percent, sqrt, subtract
 
 
 class CalculatorTests(unittest.TestCase):
@@ -15,6 +15,10 @@ class CalculatorTests(unittest.TestCase):
 
     def test_division(self):
         self.assertEqual(divide(8, 2), 4)
+
+    def test_percent(self):
+        self.assertEqual(percent(25), 0.25)
+        self.assertAlmostEqual(percent(12.5), 0.125)
 
     def test_decimal_values(self):
         self.assertAlmostEqual(add(1.5, 2.25), 3.75)

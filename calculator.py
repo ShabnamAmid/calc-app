@@ -15,6 +15,11 @@ def multiply(a, b):
     return a * b
 
 
+def percent(number):
+    """Convert a percentage value to its decimal representation."""
+    return number / 100
+
+
 def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero")
